@@ -6,42 +6,69 @@
 -->
 <html>
 	<head>
-		<title>Single - Future Imperfect by HTML5 UP</title>
+		<title>Drip Plug EU</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/self.css" />
+		<link rel="stylesheet" href="assets/css/dropdown.css" />
+		<link rel="stylesheet" href="assets/css/single.css" />
 	</head>
-	<body class="single is-preload">
-
+	<body class="is-preload">
+		<div class="static">
+			<div class="jumbotron">
+				<p class="jumbo">Save 15% off at checkout with code "<b>CRAZY15</b>" ||   Free worldwide shipping</p>
+			</div>
+			<header id="header">
+				<h1 class="logo">
+					<img class="logo-icon" src="images/diamond.png" alt="" />
+					<a href="index.html">Drip Plug EU</a>
+				</h1>
+				<nav class="links">
+					<ul>
+						<div class="dropdown">
+							<button class="dropbtn">Chains</button>
+							<div class="dropdown-content">
+								<a href="collection.html" class="btn">Cuban</a>
+								<a href="collection.html" class="btn">Tennis</a>
+								<a href="collection.html" class="btn">Else</a>
+								</div>
+							</div>
+							<div class="dropdown">
+								<button class="dropbtn">Rings</button>
+								<div class="dropdown-content">
+								<a href="collection.html" class="btn">Ice</a>
+								<a href="collection.html" class="btn">925</a>
+								<a href="collection.html" class="btn">Else</a>
+								</div>
+							</div>
+							<li><a href="collection.html" class="btn">Pendants</a></li>
+							<li><a href="collection.html" class="btn">Bracelets</a></li>
+							<li><a href="collection.html" class="btn">Others</a></li>
+					</ul>
+				</nav>
+				<nav class="main">
+					<ul>
+						<li class="cart">
+							<a class="fa fa-shopping-cart">Cart</a>
+						</li>
+						<li class="search">
+							<a class="fa-search" href="#search">Search</a>
+							<form id="search" method="get" action="#">
+								<input type="text" name="query" placeholder="Search" />
+							</form>
+						</li>
+						<li class="menu">
+							<a class="fa-bars" href="#menu">Menu</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		</div>
 		<!-- Wrapper -->
 			<div id="wrapper">
-
 				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Future Imperfect</a></h1>
-						<nav class="links">
-							<ul>
-								<li><a href="#">Lorem</a></li>
-								<li><a href="#">Ipsum</a></li>
-								<li><a href="#">Feugiat</a></li>
-								<li><a href="#">Tempus</a></li>
-								<li><a href="#">Adipiscing</a></li>
-							</ul>
-						</nav>
-						<nav class="main">
-							<ul>
-								<li class="search">
-									<a class="fa-search" href="#search">Search</a>
-									<form id="search" method="get" action="#">
-										<input type="text" name="query" placeholder="Search" />
-									</form>
-								</li>
-								<li class="menu">
-									<a class="fa-bars" href="#menu">Menu</a>
-								</li>
-							</ul>
-						</nav>
-					</header>
+					
 
 				<!-- Menu -->
 					<section id="menu">
@@ -55,32 +82,29 @@
 
 						<!-- Links -->
 							<section>
-								<ul class="links">
-									<li>
-										<a href="#">
-											<h3>Lorem ipsum</h3>
-											<p>Feugiat tempus veroeros dolor</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3>Dolor sit amet</h3>
-											<p>Sed vitae justo condimentum</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3>Feugiat veroeros</h3>
-											<p>Phasellus sed ultricies mi congue</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3>Etiam sed consequat</h3>
-											<p>Porta lectus amet ultricies</p>
-										</a>
-									</li>
-								</ul>
+								<nav class="links">
+									<ul id="buger-menu" class="burger-menu">
+										<div class="dropdown">
+											<button class="dropbtn">Chains</button>
+											<div class="dropdown-content">
+												<a href="collection.html" class="btn">Cuban</a>
+												<a href="collection.html" class="btn">Tennis</a>
+												<a href="collection.html" class="btn">Else</a>
+												</div>
+											</div>
+											<div class="dropdown">
+												<button class="dropbtn">Rings</button>
+												<div class="dropdown-content">
+												<a href="collection.html" class="btn">Ice</a>
+												<a href="collection.html" class="btn">925</a>
+												<a href="collection.html" class="btn">Else</a>
+												</div>
+											</div>
+											<li><a href="collection.html" class="btn">Pendants</a></li>
+											<li><a href="collection.html" class="btn">Bracelets</a></li>
+											<li><a href="collection.html" class="btn">Others</a></li>
+									</ul>
+								</nav>
 							</section>
 
 						<!-- Actions -->
@@ -92,30 +116,60 @@
 
 					</section>
 
+
+
 				<!-- Main -->
 					<div id="main">
 
 						<!-- Post -->
 							<article class="post">
 								<header>
-									<div class="title">
-										<h2><a href="#">Magna sed adipiscing</a></h2>
-										<p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
-									</div>
-									<div class="meta">
-										<time class="published" datetime="2015-11-01">November 1, 2015</time>
-										<a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
+									<div class="product-picture"></div>
+									<div class="product-information">
+										<p class="title">Tennis Chain 4mm</p>
+										<p>$69.00</p>
+										<div class="product-color">
+											<p>Plating Colour:</p>
+											<form action="">
+												<input type="radio"	name="gold" id="1" class="goldbx">
+												<label for="1" class="lbl-radio">
+													<div class="color-selection">
+														<p>Gold</p>
+													</div>
+												</label>
+												<input type="radio"	name="white-gold" id="2" class="whitegoldbx">
+												<label for="2" class="lbl-radio">
+													<div class="color-selection">
+														<p>White Gold</p>
+													</div>
+												</label>
+											</form>
+										</div>
+										<div class="product-length">
+											<p>Chain Length:</p>
+											<form action="">
+												<input type="radio"	name="gold" id="3" class="goldbx">
+												<label for="3" class="lbl-radio">
+													<div class="color-selection">
+														<p>20"</p>
+													</div>
+												</label>
+												<input type="radio"	name="white-gold" id="4" class="whitegoldbx">
+												<label for="4" class="lbl-radio">
+													<div class="color-selection">
+														<p>22"</p>
+													</div>
+												</label>
+											</form>
+											
+											
+										</div>
 									</div>
 								</header>
-								<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
 								<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
 								<p>Nunc quis dui scelerisque, scelerisque urna ut, dapibus orci. Sed vitae condimentum lectus, ut imperdiet quam. Maecenas in justo ut nulla aliquam sodales vel at ligula. Sed blandit diam odio, sed fringilla lectus molestie sit amet. Praesent eu tortor viverra lorem mattis pulvinar feugiat in turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce ullamcorper tellus sit amet mattis dignissim. Phasellus ut metus ligula. Curabitur nec leo turpis. Ut gravida purus quis erat pretium, sed pellentesque massa elementum. Fusce vestibulum porta augue, at mattis justo. Integer sed sapien fringilla, dapibus risus id, faucibus ante. Pellentesque mattis nunc sit amet tortor pellentesque, non placerat neque viverra. </p>
 								<footer>
-									<ul class="stats">
-										<li><a href="#">General</a></li>
-										<li><a href="#" class="icon solid fa-heart">28</a></li>
-										<li><a href="#" class="icon solid fa-comment">128</a></li>
-									</ul>
+									
 								</footer>
 							</article>
 
@@ -141,6 +195,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/navbar.js"></script>
 
 	</body>
 </html>

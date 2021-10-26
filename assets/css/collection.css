@@ -1,0 +1,141 @@
+* {
+    transition: 0.3s;
+}
+
+#wrapper {
+    flex-direction: column;
+    width: 100%;
+}
+
+.products-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 19rem));
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    column-gap: 60px;
+    row-gap: 30px;
+}
+
+.quick-button {
+    background-color: black;
+    height: 40px;
+    margin: 20px;
+    color: white;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: 0.2s;
+}
+
+.quick-button-label {
+
+}
+
+.product-box {
+    width: 300px;
+    height: 300px;
+    border: solid 2px black;
+    border-radius: 30px;
+    position: relative;
+    
+}
+
+.product:hover {
+    position: relative;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.product:hover .quick-button {
+    opacity: 1;
+}
+
+.product-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.p-title {
+    margin-bottom: 1em;
+}
+
+.description {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.more-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.m-button {
+    width: 300px;
+}
+
+@media screen and (max-width: 1556px) {
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(31rem, 19rem));
+    }
+    .product-box {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(23rem, 19rem));
+    }
+    .product-box {
+        width: 400px;
+        height: 400px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 19rem));
+    }
+    .product-box {
+        width: 310px;
+        height: 310px;
+    }
+}
+@media screen and (max-width: 840px) {
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(6rem, 17rem));
+    }
+    .product-box {
+        width: 310px;
+        height: 310px;
+    }
+}
+@media screen and (max-width: 630px) {
+    .product-box {
+        width: 300px;
+        height: 300px;
+    }
+}
